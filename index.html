@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALONE STUDIO — Video Editing &amp; Design</title>
+<meta name="description" content="ALONE STUDIO — short-form video editing, infographics, thumbnails and social media design. Fast, high quality, worldwide.">
+<meta name="theme-color" content="#050308">
+<link rel="canonical" href="https://alone911911.github.io/Studio/">
+<link rel="icon" type="image/png" href="logo.png">
+<meta property="og:title" content="ALONE STUDIO">
+<meta property="og:description" content="Content that grabs attention from frame one. Video editing, infographics, thumbnails & social media design.">
+<meta property="og:image" content="https://alone911911.github.io/Studio/logo.png">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="preloader">
+  <img src="logo.png" alt="Alone Studio">
+  <div class="loader-bar"></div>
+</div>
+
+<div class="lang-switch">
+  <button id="btn-ru" class="active" onclick="setLang('ru')">RU</button>
+  <button id="btn-uk" onclick="setLang('uk')">UA</button>
+  <button id="btn-en" onclick="setLang('en')">EN</button>
+</div>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="brand">ALONE<span>·</span>STUDIO</a>
+    <div class="navlinks">
+      <a href="#services"><span data-ru>Услуги</span><span data-uk>Послуги</span><span data-en>Services</span></a>
+      <a href="#why"><span data-ru>Почему мы</span><span data-uk>Чому ми</span><span data-en>Why us</span></a>
+      <a href="#pricing"><span data-ru>Цены</span><span data-uk>Ціни</span><span data-en>Pricing</span></a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact"><span data-ru>Контакты</span><span data-uk>Контакти</span><span data-en>Contact</span></a>
+      <a href="order.html" class="cta-link"><span data-ru>Заказать</span><span data-uk>Замовити</span><span data-en>Order</span></a>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services"><span data-ru>Услуги</span><span data-uk>Послуги</span><span data-en>Services</span></a>
+  <a href="#why"><span data-ru>Почему мы</span><span data-uk>Чому ми</span><span data-en>Why us</span></a>
+  <a href="#pricing"><span data-ru>Цены</span><span data-uk>Ціни</span><span data-en>Pricing</span></a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact"><span data-ru>Контакты</span><span data-uk>Контакти</span><span data-en>Contact</span></a>
+  <a href="order.html"><span data-ru>Заказать</span><span data-uk>Замовити</span><span data-en>Order</span></a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="ring-wrap">
+    <div class="pulse-ring r1"></div>
+    <div class="pulse-ring r2"></div>
+    <div class="pulse-ring r3"></div>
+    <img src="logo.png" alt="Alone Studio logo">
+  </div>
+  <span class="eyebrow"><span data-ru>Видео · Дизайн · Соцсети</span><span data-uk>Відео · Дизайн · Соцмережі</span><span data-en>Video · Design · Social</span></span>
+  <h1>
+    <span data-ru>Контент, который <em>цепляет</em> с первого кадра</span><span data-uk>Контент, який <em>чіпляє</em> з першого кадру</span>
+    <span data-en>Content that <em>grabs attention</em> from frame one</span>
+  </h1>
+  <p>
+    <span data-ru>ALONE STUDIO — монтаж коротких видео, инфографика, превью и дизайн для соцсетей. Быстро, качественно, по всему миру.</span><span data-uk>ALONE STUDIO — монтаж коротких відео, інфографіка, прев’ю та дизайн для соцмереж. Швидко, якісно, по всьому світу.</span>
+    <span data-en>ALONE STUDIO creates short-form video edits, infographics, thumbnails and social media design. Fast delivery, premium quality, worldwide.</span>
+  </p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="order.html">
+      <span data-ru>Оформить заказ</span><span data-uk>Оформити замовлення</span><span data-en>Place an order</span>
+    </a>
+    <a class="btn btn-ghost" href="#pricing">
+      <span data-ru>Смотреть цены</span><span data-uk>Дивитися ціни</span><span data-en>View pricing</span>
+    </a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="tag"><span data-ru>Наши услуги</span><span data-uk>Наші послуги</span><span data-en>Our Services</span></span>
+      <h2><span data-ru>Что мы делаем</span><span data-uk>Що ми робимо</span><span data-en>What we do</span></h2>
+    </div>
+    <div class="grid-services reveal-stagger">
+      <div class="card">
+        <span class="icon">✂️</span>
+        <h3><span data-ru>Монтаж коротких видео</span><span data-uk>Монтаж коротких відео</span><span data-en>Short-form Video Editing</span></h3>
+        <p><span data-ru>TikTok · Reels · YouTube Shorts</span><span data-uk>TikTok · Reels · YouTube Shorts</span><span data-en>TikTok · Reels · YouTube Shorts</span></p>
+      </div>
+      <div class="card">
+        <span class="icon">🎨</span>
+        <h3><span data-ru>Инфографика товаров</span><span data-uk>Інфографіка товарів</span><span data-en>Product Infographics</span></h3>
+        <p><span data-ru>Карточки для маркетплейсов и рекламы</span><span data-uk>Картки для маркетплейсів і реклами</span><span data-en>Cards for marketplaces and ads</span></p>
+      </div>
+      <div class="card">
+        <span class="icon">🖼</span>
+        <h3><span data-ru>Превью для YouTube</span><span data-uk>Прев’ю для YouTube</span><span data-en>YouTube Thumbnails</span></h3>
+        <p><span data-ru>Яркие обложки, которые повышают CTR</span><span data-uk>Яскраві обкладинки, що підвищують CTR</span><span data-en>Bold covers that boost click-through</span></p>
+      </div>
+      <div class="card">
+        <span class="icon">📱</span>
+        <h3><span data-ru>Дизайн для соцсетей</span><span data-uk>Дизайн для соцмереж</span><span data-en>Social Media Design</span></h3>
+        <p><span data-ru>Посты, сторис, баннеры</span><span data-uk>Пости, сторіс, банери</span><span data-en>Posts, stories, banners</span></p>
+      </div>
+      <div class="card">
+        <span class="icon">⚡️</span>
+        <h3><span data-ru>Быстрая доставка</span><span data-uk>Швидка доставка</span><span data-en>Fast Delivery</span></h3>
+        <p><span data-ru>Работаем без задержек</span><span data-uk>Працюємо без затримок</span><span data-en>No unnecessary delays</span></p>
+      </div>
+      <div class="card">
+        <span class="icon">💎</span>
+        <h3><span data-ru>Высокое качество</span><span data-uk>Висока якість</span><span data-en>High Quality</span></h3>
+        <p><span data-ru>Внимание к каждой детали</span><span data-uk>Увага до кожної деталі</span><span data-en>Attention to every detail</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SHOWCASE -->
+<section id="showcase">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="tag"><span data-ru>Примеры результата</span><span data-uk>Приклади результату</span><span data-en>What you get</span></span>
+      <h2><span data-ru>Что вы получите</span><span data-uk>Що ви отримаєте</span><span data-en>What you will get</span></h2>
+      <p class="demo-note"><span data-ru>Демонстрационные макеты — это не реальные заказы клиентов.</span><span data-uk>Демонстраційні макети — це не реальні замовлення клієнтів.</span><span data-en>Demo mockups — these are not real client orders.</span></p>
+    </div>
+    <div class="show-grid reveal-stagger">
+      <figure class="show-card">
+        <div class="show-art"><svg viewBox="0 0 320 180" role="img" aria-label="Video editing timeline demo"><defs><linearGradient id="gv" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9333ea"/><stop offset="1" stop-color="#ec4899"/></linearGradient></defs><rect width="320" height="180" fill="#0b0712"/>
+<rect x="14" y="12" width="146" height="82" rx="6" fill="#4b4558"/><rect x="160" y="12" width="146" height="82" rx="6" fill="url(#gv)"/><circle cx="87" cy="53" r="16" fill="#6b6578"/><circle cx="233" cy="53" r="16" fill="#fde68a"/><path d="M160 12v82" stroke="#fff" stroke-width="2"/>
+<rect x="14" y="108" width="170" height="14" rx="3" fill="#7c3aed"/><rect x="188" y="108" width="118" height="14" rx="3" fill="#c026d3"/><rect x="40" y="126" width="120" height="14" rx="3" fill="#0ea5e9"/><rect x="164" y="126" width="100" height="14" rx="3" fill="#14b8a6"/>
+<path class="draw" d="M14 158q6-10 12 0t12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0" fill="none" stroke="#a78bfa" stroke-width="2" opacity=".7"/>
+<g class="ph"><rect x="14" y="102" width="2" height="62" fill="#fff"/><path d="M8 100h14l-7 8z" fill="#fff"/></g></svg></div>
+        <figcaption><h3><span data-ru>Видеомонтаж</span><span data-uk>Відеомонтаж</span><span data-en>Video editing</span></h3><p><span data-ru>Таймлайн, цветокоррекция до/после</span><span data-uk>Таймлайн, кольорокорекція до/після</span><span data-en>Timeline, color grading before/after</span></p></figcaption>
+      </figure>
+      <figure class="show-card">
+        <div class="show-art"><svg viewBox="0 0 320 180" role="img" aria-label="YouTube thumbnail styles demo"><defs><linearGradient id="ga" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#ec4899"/></linearGradient></defs><defs><linearGradient id="gb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#facc15"/><stop offset="1" stop-color="#f97316"/></linearGradient></defs><defs><linearGradient id="gc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0ea5e9"/><stop offset="1" stop-color="#1e3a8a"/></linearGradient></defs><rect width="320" height="180" fill="#0b0712"/>
+<g class="fl"><rect x="10" y="30" width="96" height="54" rx="5" fill="url(#ga)"/><circle cx="36" cy="58" r="14" fill="#fff" opacity=".9"/><rect x="56" y="44" width="42" height="7" rx="2" fill="#fff"/><rect x="56" y="57" width="30" height="7" rx="2" fill="#fff" opacity=".7"/></g>
+<g class="fl"><rect x="112" y="30" width="96" height="54" rx="5" fill="url(#gb)"/><rect x="122" y="40" width="50" height="12" rx="2" fill="#111"/><rect x="122" y="56" width="36" height="12" rx="2" fill="#111"/><path d="M186 70l14-8-14-8z" fill="#111"/></g>
+<g class="fl"><rect x="214" y="30" width="96" height="54" rx="5" fill="url(#gc)"/><circle cx="262" cy="57" r="17" fill="none" stroke="#fff" stroke-width="3"/><path d="M257 49l12 8-12 8z" fill="#fff"/></g>
+<rect x="10" y="102" width="150" height="64" rx="5" fill="#1a1325"/><rect x="170" y="102" width="140" height="64" rx="5" fill="url(#ga)"/><rect x="20" y="116" width="80" height="8" rx="2" fill="#6b6578"/><rect x="20" y="132" width="60" height="8" rx="2" fill="#4b4558"/><rect x="182" y="116" width="90" height="10" rx="2" fill="#fff"/><rect x="182" y="132" width="64" height="10" rx="2" fill="#fff" opacity=".7"/></svg></div>
+        <figcaption><h3><span data-ru>Превью</span><span data-uk>Прев’ю</span><span data-en>Thumbnails</span></h3><p><span data-ru>Разные стили обложек</span><span data-uk>Різні стилі обкладинок</span><span data-en>Different cover styles</span></p></figcaption>
+      </figure>
+      <figure class="show-card">
+        <div class="show-art"><svg viewBox="0 0 320 180" role="img" aria-label="Product infographic demo"><defs><linearGradient id="gi" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a855f7"/><stop offset="1" stop-color="#4c1d95"/></linearGradient></defs><rect width="320" height="180" fill="#0b0712"/>
+<g class="fl"><rect x="118" y="30" width="84" height="120" rx="14" fill="url(#gi)"/><rect x="132" y="46" width="56" height="64" rx="8" fill="#fff" opacity=".18"/></g>
+<g class="draw" stroke="#a78bfa" stroke-width="1.5" fill="none"><path d="M118 60H70M202 90h48M118 130H70"/></g>
+<circle cx="70" cy="60" r="4" fill="#fde68a"/><circle cx="250" cy="90" r="4" fill="#fde68a"/><circle cx="70" cy="130" r="4" fill="#fde68a"/>
+<rect x="14" y="44" width="52" height="8" rx="2" fill="#fff"/><rect x="14" y="58" width="40" height="6" rx="2" fill="#6b6578"/><rect x="254" y="74" width="52" height="8" rx="2" fill="#fff"/><rect x="254" y="88" width="40" height="6" rx="2" fill="#6b6578"/><rect x="14" y="114" width="52" height="8" rx="2" fill="#fff"/><rect x="14" y="128" width="40" height="6" rx="2" fill="#6b6578"/></svg></div>
+        <figcaption><h3><span data-ru>Инфографика</span><span data-uk>Інфографіка</span><span data-en>Infographics</span></h3><p><span data-ru>Карточка товара с акцентами</span><span data-uk>Картка товару з акцентами</span><span data-en>Product card with callouts</span></p></figcaption>
+      </figure>
+      <figure class="show-card">
+        <div class="show-art"><svg viewBox="0 0 320 180" role="img" aria-label="Banner and social post demo"><defs><linearGradient id="gd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9333ea"/><stop offset="1" stop-color="#312e81"/></linearGradient></defs><defs><linearGradient id="ge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ec4899"/><stop offset="1" stop-color="#f97316"/></linearGradient></defs><rect width="320" height="180" fill="#0b0712"/>
+<g class="fl"><rect x="10" y="12" width="300" height="70" rx="8" fill="url(#gd)"/><rect x="26" y="30" width="110" height="12" rx="2" fill="#fff"/><rect x="26" y="48" width="76" height="8" rx="2" fill="#fff" opacity=".6"/><circle cx="262" cy="47" r="22" fill="#fff" opacity=".2"/><circle cx="276" cy="40" r="12" fill="#fde68a"/></g>
+<g class="fl"><rect x="10" y="96" width="76" height="76" rx="8" fill="url(#ge)"/><circle cx="48" cy="130" r="16" fill="#fff" opacity=".9"/></g>
+<g class="fl"><rect x="96" y="96" width="44" height="76" rx="8" fill="#1a1325" stroke="#7c3aed"/><rect x="104" y="108" width="28" height="6" rx="2" fill="#fff"/><rect x="104" y="150" width="28" height="12" rx="3" fill="#a855f7"/></g>
+<rect x="152" y="96" width="158" height="76" rx="8" fill="#1a1325"/><path class="draw" d="M164 156l30-26 24 14 34-40 40 20 12-10" fill="none" stroke="#a78bfa" stroke-width="3" stroke-linecap="round"/></svg></div>
+        <figcaption><h3><span data-ru>Дизайн для соцсетей</span><span data-uk>Дизайн для соцмереж</span><span data-en>Social media design</span></h3><p><span data-ru>Баннер, пост и сторис</span><span data-uk>Банер, пост і сторіс</span><span data-en>Banner, post and story</span></p></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="tag"><span data-ru>Как мы работаем</span><span data-uk>Як ми працюємо</span><span data-en>How We Work</span></span>
+      <h2><span data-ru>Простой процесс</span><span data-uk>Простий процес</span><span data-en>A simple process</span></h2>
+    </div>
+    <div class="process-grid reveal-stagger">
+      <div class="process-item">
+        <span class="process-num">01</span>
+        <h3><span data-ru>Заявка</span><span data-uk>Заявка</span><span data-en>Request</span></h3>
+        <p><span data-ru>Заполняете форму заказа или пишете в Telegram — рассказываете о проекте</span><span data-uk>Заповнюєте форму замовлення або пишете в Telegram — розповідаєте про проєкт</span><span data-en>Fill out the order form or message us on Telegram — tell us about the project</span></p>
+      </div>
+      <div class="process-item">
+        <span class="process-num">02</span>
+        <h3><span data-ru>Обсуждение</span><span data-uk>Обговорення</span><span data-en>Discussion</span></h3>
+        <p><span data-ru>Уточняем детали, формат, референсы и сроки, согласуем тариф</span><span data-uk>Уточнюємо деталі, формат, референси та терміни, узгоджуємо тариф</span><span data-en>We clarify details, format, references and deadlines, agree on a tier</span></p>
+      </div>
+      <div class="process-item">
+        <span class="process-num">03</span>
+        <h3><span data-ru>Работа</span><span data-uk>Робота</span><span data-en>Production</span></h3>
+        <p><span data-ru>Монтируем, оформляем и присылаем черновой вариант на проверку</span><span data-uk>Монтуємо, оформлюємо та надсилаємо чорновий варіант на перевірку</span><span data-en>We edit, design and send a draft version for review</span></p>
+      </div>
+      <div class="process-item">
+        <span class="process-num">04</span>
+        <h3><span data-ru>Сдача</span><span data-uk>Здача</span><span data-en>Delivery</span></h3>
+        <p><span data-ru>Вносим правки при необходимости и отправляем готовый файл</span><span data-uk>Вносимо правки за потреби та надсилаємо готовий файл</span><span data-en>We apply revisions if needed and send the final file</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="tag"><span data-ru>Почему мы</span><span data-uk>Чому ми</span><span data-en>Why Us</span></span>
+      <h2><span data-ru>Почему выбирают ALONE STUDIO</span><span data-uk>Чому обирають ALONE STUDIO</span><span data-en>Why choose ALONE STUDIO?</span></h2>
+    </div>
+    <div class="why-grid reveal-stagger">
+      <div class="why-item"><span class="check">✓</span><p><span data-ru>Современный и чистый дизайн</span><span data-uk>Сучасний і чистий дизайн</span><span data-en>Modern & clean design</span></p></div>
+      <div class="why-item"><span class="check">✓</span><p><span data-ru>Внимание к каждой детали</span><span data-uk>Увага до кожної деталі</span><span data-en>Attention to every detail</span></p></div>
+      <div class="why-item"><span class="check">✓</span><p><span data-ru>Быстрая связь</span><span data-uk>Швидкий зв’язок</span><span data-en>Fast communication</span></p></div>
+      <div class="why-item"><span class="check">✓</span><p><span data-ru>Доступные цены</span><span data-uk>Доступні ціни</span><span data-en>Affordable prices</span></p></div>
+      <div class="why-item"><span class="check">✓</span><p><span data-ru>Творческий подход</span><span data-uk>Творчий підхід</span><span data-en>Creative approach</span></p></div>
+      <div class="why-item"><span class="check">✓</span><p><span data-ru>Удовлетворённость клиента — приоритет</span><span data-uk>Задоволеність клієнта — пріоритет</span><span data-en>Customer satisfaction first</span></p></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- WE CREATE -->
+<section id="create">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="tag"><span data-ru>Портфолио форматов</span><span data-uk>Формати робіт</span><span data-en>What We Create</span></span>
+      <h2><span data-ru>Мы создаём</span><span data-uk>Ми створюємо</span><span data-en>We create</span></h2>
+    </div>
+    <div class="create-grid reveal-stagger">
+      <div class="create-item"><span class="icon">🎬</span><p><span data-ru>Вирусные короткие видео</span><span data-uk>Вірусні короткі відео</span><span data-en>Viral short videos</span></p></div>
+      <div class="create-item"><span class="icon">🛒</span><p><span data-ru>Инфографику для маркетплейсов</span><span data-uk>Інфографіку для маркетплейсів</span><span data-en>Marketplace infographics</span></p></div>
+      <div class="create-item"><span class="icon">📈</span><p><span data-ru>Графику для соцсетей</span><span data-uk>Графіку для соцмереж</span><span data-en>Social media graphics</span></p></div>
+      <div class="create-item"><span class="icon">🖼</span><p><span data-ru>Профессиональные превью</span><span data-uk>Професійні прев’ю</span><span data-en>Professional thumbnails</span></p></div>
+      <div class="create-item"><span class="icon">📢</span><p><span data-ru>Рекламные визуалы</span><span data-uk>Рекламні візуали</span><span data-en>Promotional visuals</span></p></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="tag mono"><span data-ru>Прайс-лист 2026</span><span data-uk>Прайс-лист 2026</span><span data-en>Price List 2026</span></span>
+      <h2><span data-ru>Цены</span><span data-uk>Ціни</span><span data-en>Pricing</span></h2>
+    </div>
+
+    <div class="price-tabs reveal">
+      <button class="price-tab active" onclick="showPanel('video', this)"><span data-ru>Видеомонтаж</span><span data-uk>Відеомонтаж</span><span data-en>Video Editing</span></button>
+      <button class="price-tab" onclick="showPanel('info', this)"><span data-ru>Инфографика</span><span data-uk>Інфографіка</span><span data-en>Infographics</span></button>
+      <button class="price-tab" onclick="showPanel('thumb', this)"><span data-ru>Превью</span><span data-uk>Прев’ю</span><span data-en>Thumbnails</span></button>
+      <button class="price-tab" onclick="showPanel('social', this)"><span data-ru>Соцсети</span><span data-uk>Соцмережі</span><span data-en>Social Media</span></button>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="price-panel active" id="panel-video">
+      <div class="price-grid reveal-stagger">
+        <div class="price-card">
+          <span class="tier">🟢 Basic</span>
+          <span class="amount"><b class="px" data-usd="10" data-sfx=""></b></span>
+          <ul>
+            <li><span data-ru>До 30 секунд</span><span data-uk>До 30 секунд</span><span data-en>Up to 30 sec</span></li>
+            <li><span data-ru>Базовая нарезка</span><span data-uk>Базова нарізка</span><span data-en>Basic cuts</span></li>
+            <li><span data-ru>Музыка</span><span data-uk>Музика</span><span data-en>Music</span></li>
+            <li><span data-ru>Простые субтитры</span><span data-uk>Прості субтитри</span><span data-en>Simple subtitles</span></li>
+          </ul>
+        </div>
+        <div class="price-card featured">
+          <span class="tier">🟣 Standard</span>
+          <span class="amount"><b class="px" data-usd="20" data-sfx=""></b></span>
+          <ul>
+            <li><span data-ru>До 60 секунд</span><span data-uk>До 60 секунд</span><span data-en>Up to 60 sec</span></li>
+            <li><span data-ru>Динамичный монтаж</span><span data-uk>Динамічний монтаж</span><span data-en>Dynamic editing</span></li>
+            <li><span data-ru>Motion-эффекты</span><span data-uk>Motion-ефекти</span><span data-en>Motion effects</span></li>
+            <li><span data-ru>Анимированные субтитры</span><span data-uk>Анімовані субтитри</span><span data-en>Animated subtitles</span></li>
+            <li><span data-ru>Звуковые эффекты</span><span data-uk>Звукові ефекти</span><span data-en>Sound effects</span></li>
+            <li><span data-ru>Цветокоррекция</span><span data-uk>Кольорокорекція</span><span data-en>Color correction</span></li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <span class="tier">🔵 Premium</span>
+          <span class="amount"><b class="px" data-usd="35" data-sfx="+"></b></span>
+          <ul>
+            <li><span data-ru>Продвинутый монтаж</span><span data-uk>Просунутий монтаж</span><span data-en>Advanced editing</span></li>
+            <li><span data-ru>Премиум-анимации</span><span data-uk>Преміум-анімації</span><span data-en>Premium animations</span></li>
+            <li><span data-ru>Кастомные субтитры</span><span data-uk>Кастомні субтитри</span><span data-en>Custom captions</span></li>
+            <li><span data-ru>Саунд-дизайн</span><span data-uk>Саунд-дизайн</span><span data-en>Sound design</span></li>
+            <li><span data-ru>Экспорт высокого качества</span><span data-uk>Експорт високої якості</span><span data-en>High-quality export</span></li>
+            <li><span data-ru>Правки включены</span><span data-uk>Правки включено</span><span data-en>Revisions included</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFOGRAPHICS -->
+    <div class="price-panel" id="panel-info">
+      <div class="simple-price-grid">
+        <div class="simple-price"><span class="label">🟢 <span data-ru>1 изображение</span><span data-uk>1 зображення</span><span data-en>1 Image</span></span><span class="value"><b class="px" data-usd="10" data-sfx=""></b></span></div>
+        <div class="simple-price"><span class="label">🟣 <span data-ru>3 изображения</span><span data-uk>3 зображення</span><span data-en>3 Images</span></span><span class="value"><b class="px" data-usd="25" data-sfx=""></b></span></div>
+        <div class="simple-price"><span class="label">🔵 <span data-ru>5 изображений</span><span data-uk>5 зображень</span><span data-en>5 Images</span></span><span class="value"><b class="px" data-usd="40" data-sfx=""></b></span></div>
+      </div>
+    </div>
+
+    <!-- THUMBNAILS -->
+    <div class="price-panel" id="panel-thumb">
+      <div class="simple-price-grid">
+        <div class="simple-price"><span class="label"><span data-ru>Базовое</span><span data-uk>Базове</span><span data-en>Basic</span></span><span class="value"><b class="px" data-usd="8" data-sfx=""></b></span></div>
+        <div class="simple-price"><span class="label"><span data-ru>Премиум</span><span data-uk>Преміум</span><span data-en>Premium</span></span><span class="value"><b class="px" data-usd="15" data-sfx=""></b></span></div>
+      </div>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="price-panel" id="panel-social">
+      <div class="simple-price-grid">
+        <div class="simple-price"><span class="label"><span data-ru>Пост в Instagram</span><span data-uk>Пост в Instagram</span><span data-en>Instagram Post</span></span><span class="value"><b class="px" data-usd="8" data-sfx=""></b></span></div>
+        <div class="simple-price"><span class="label"><span data-ru>Дизайн сторис</span><span data-uk>Дизайн сторіс</span><span data-en>Story Design</span></span><span class="value"><b class="px" data-usd="6" data-sfx=""></b></span></div>
+        <div class="simple-price"><span class="label"><span data-ru>Баннер</span><span data-uk>Банер</span><span data-en>Banner</span></span><span class="value"><span data-ru>от <b class="px" data-usd="15" data-sfx=""></b></span><span data-uk>від <b class="px" data-usd="15" data-sfx=""></b></span><span data-en>from <b class="px" data-usd="15" data-sfx=""></b></span></span></div>
+      </div>
+    </div>
+
+    <div class="extras reveal">
+      <div class="simple-price"><span class="label">⚡️ <span data-ru>Доставка за 24 часа</span><span data-uk>Доставка за 24 години</span><span data-en>24-hour delivery</span></span><span class="value">+<b class="px" data-usd="10" data-sfx=""></b></span></div>
+      <div class="simple-price"><span class="label">🔁 <span data-ru>Доп. правка</span><span data-uk>Дод. правка</span><span data-en>Additional revision</span></span><span class="value">+<b class="px" data-usd="5" data-sfx=""></b></span></div>
+      <div class="simple-price"><span class="label">📁 <span data-ru>Исходный файл проекта</span><span data-uk>Вихідний файл проєкту</span><span data-en>Source project file</span></span><span class="value">+<b class="px" data-usd="10" data-sfx=""></b></span></div>
+    </div>
+
+    <div class="payment-row reveal">
+      <span class="tag"><span data-ru>Оплата</span><span data-uk>Оплата</span><span data-en>Payment</span></span>
+      <div class="pay-pills">
+        <span>USD ($)</span>
+        <span>Crypto (USDT)</span>
+        <span>PayPal</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="tag">FAQ</span>
+      <h2><span data-ru>Частые вопросы</span><span data-uk>Часті питання</span><span data-en>Frequently Asked</span></h2>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq-item" open>
+        <summary>
+          <span data-ru>Сколько занимает выполнение заказа?</span><span data-uk>Скільки триває виконання замовлення?</span><span data-en>How long does an order take?</span>
+          <span class="faq-arrow">⌄</span>
+        </summary>
+        <p><span data-ru>Обычно 1–3 дня в зависимости от тарифа и загрузки. Нужно быстрее — есть услуга «Доставка за 24 часа» (+<b class="px" data-usd="10" data-sfx=""></b>).</span><span data-uk>Зазвичай 1–3 дні залежно від тарифу та завантаження. Потрібно швидше — є послуга «Доставка за 24 години» (+<b class="px" data-usd="10" data-sfx=""></b>).</span><span data-en>Usually 1–3 days depending on the tier and workload. Need it faster — a 24-hour delivery add-on is available (+<b class="px" data-usd="10" data-sfx=""></b>).</span></p>
+      </details>
+      <details class="faq-item">
+        <summary>
+          <span data-ru>Сколько правок входит в заказ?</span><span data-uk>Скільки правок входить у замовлення?</span><span data-en>How many revisions are included?</span>
+          <span class="faq-arrow">⌄</span>
+        </summary>
+        <p><span data-ru>Базовые правки включены в тариф Premium. На остальных тарифах доступна дополнительная правка за <b class="px" data-usd="5" data-sfx=""></b>.</span><span data-uk>Базові правки входять у тариф Premium. На інших тарифах доступна додаткова правка за <b class="px" data-usd="5" data-sfx=""></b>.</span><span data-en>Basic revisions are included with the Premium tier. On other tiers an extra revision is available for <b class="px" data-usd="5" data-sfx=""></b>.</span></p>
+      </details>
+      <details class="faq-item">
+        <summary>
+          <span data-ru>Какие способы оплаты вы принимаете?</span><span data-uk>Які способи оплати ви приймаєте?</span><span data-en>What payment methods do you accept?</span>
+          <span class="faq-arrow">⌄</span>
+        </summary>
+        <p><span data-ru>USD, крипта (USDT) и PayPal, если доступен в вашей стране.</span><span data-uk>USD, крипта (USDT) та PayPal, якщо доступний у вашій країні.</span><span data-en>USD, crypto (USDT), and PayPal where available.</span></p>
+      </details>
+      <details class="faq-item">
+        <summary>
+          <span data-ru>Можно получить исходный файл проекта?</span><span data-uk>Чи можна отримати вихідний файл проєкту?</span><span data-en>Can I get the source project file?</span>
+          <span class="faq-arrow">⌄</span>
+        </summary>
+        <p><span data-ru>Да, это дополнительная услуга за <b class="px" data-usd="10" data-sfx=""></b> — просто укажите это в заявке.</span><span data-uk>Так, це додаткова послуга за <b class="px" data-usd="10" data-sfx=""></b> — просто вкажіть це в заявці.</span><span data-en>Yes, it's an add-on for <b class="px" data-usd="10" data-sfx=""></b> — just mention it in your order request.</span></p>
+      </details>
+      <details class="faq-item">
+        <summary>
+          <span data-ru>Работаете ли вы с клиентами вне СНГ?</span><span data-uk>Чи працюєте ви з клієнтами за межами СНД?</span><span data-en>Do you work with clients outside the CIS?</span>
+          <span class="faq-arrow">⌄</span>
+        </summary>
+        <p><span data-ru>Да, мы работаем по всему миру и общаемся на русском и английском.</span><span data-uk>Так, ми працюємо по всьому світу та спілкуємося російською та англійською.</span><span data-en>Yes, we work worldwide and communicate in Russian and English.</span></p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="contact-box reveal">
+      <h2><span data-ru>Готовы начать проект?</span><span data-uk>Готові розпочати проєкт?</span><span data-en>Ready to start a project?</span></h2>
+      <p><span data-ru>Оставьте заявку на сайте или напишите в Telegram — ответим быстро.</span><span data-uk>Залиште заявку на сайті або напишіть у Telegram — відповімо швидко.</span><span data-en>Submit a request on the site or message us on Telegram — we reply fast.</span></p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="order.html">
+          <span data-ru>Оформить заказ</span><span data-uk>Оформити замовлення</span><span data-en>Place an order</span>
+        </a>
+        <a class="btn btn-ghost" href="https://t.me/Alone991" target="_blank" rel="noopener">
+          <span data-ru>Написать в Telegram</span><span data-uk>Написати в Telegram</span><span data-en>Message on Telegram</span>
+        </a>
+      </div>
+      <p style="margin-top:22px;" class="telegram-handle">@Alone991</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span data-ru>Каждый проект важен.</span><span data-uk>Кожен проєкт важливий.</span><span data-en>Every project matters.</span>
+  &nbsp;·&nbsp; ALONE STUDIO &nbsp;·&nbsp;
+  <a href="https://t.me/AloneStudioTG" target="_blank" rel="noopener">t.me/AloneStudioTG</a>
+</footer>
+
+<a href="https://t.me/Alone991" target="_blank" rel="noopener" class="float-tg" aria-label="Telegram">
+  <span class="float-tg-ping"></span>
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M21.5 3.5L2.5 11l6 2.2m13-9.7L16 20.5l-7.5-7.3m13-9.7L8.5 13.2" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>

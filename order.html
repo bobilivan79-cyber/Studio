@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Заказать — ALONE STUDIO</title>
+<meta name="description" content="Оформите заказ на видеомонтаж, инфографику, превью или дизайн для соцсетей — ALONE STUDIO.">
+<link rel="icon" type="image/png" href="logo.png">
+<meta property="og:title" content="Заказать — ALONE STUDIO">
+<meta property="og:description" content="Оформите заказ на видеомонтаж, инфографику, превью или дизайн для соцсетей.">
+<meta property="og:image" content="https://alone911911.github.io/Studio/logo.png">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="preloader">
+  <img src="logo.png" alt="Alone Studio">
+  <div class="loader-bar"></div>
+</div>
+
+<div class="lang-switch">
+  <button id="btn-ru" class="active" onclick="setLang('ru')">RU</button>
+  <button id="btn-uk" onclick="setLang('uk')">UA</button>
+  <button id="btn-en" onclick="setLang('en')">EN</button>
+</div>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="brand">ALONE<span>·</span>STUDIO</a>
+    <div class="navlinks">
+      <a href="index.html#services"><span data-ru>Услуги</span><span data-uk>Послуги</span><span data-en>Services</span></a>
+      <a href="index.html#why"><span data-ru>Почему мы</span><span data-uk>Чому ми</span><span data-en>Why us</span></a>
+      <a href="index.html#pricing"><span data-ru>Цены</span><span data-uk>Ціни</span><span data-en>Pricing</span></a>
+      <a href="index.html#contact"><span data-ru>Контакты</span><span data-uk>Контакти</span><span data-en>Contact</span></a>
+      <a href="order.html" class="cta-link"><span data-ru>Заказать</span><span data-uk>Замовити</span><span data-en>Order</span></a>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#services"><span data-ru>Услуги</span><span data-uk>Послуги</span><span data-en>Services</span></a>
+  <a href="index.html#why"><span data-ru>Почему мы</span><span data-uk>Чому ми</span><span data-en>Why us</span></a>
+  <a href="index.html#pricing"><span data-ru>Цены</span><span data-uk>Ціни</span><span data-en>Pricing</span></a>
+  <a href="index.html#contact"><span data-ru>Контакты</span><span data-uk>Контакти</span><span data-en>Contact</span></a>
+  <a href="order.html"><span data-ru>Заказать</span><span data-uk>Замовити</span><span data-en>Order</span></a>
+</div>
+
+<section class="order-hero reveal">
+  <span class="tag"><span data-ru>Оформление заказа</span><span data-uk>Оформлення замовлення</span><span data-en>Place An Order</span></span>
+  <h1><span data-ru>Расскажите о проекте</span><span data-uk>Розкажіть про проєкт</span><span data-en>Tell us about your project</span></h1>
+  <p><span data-ru>Заполните форму — заявка придёт напрямую нам, и мы свяжемся с вами в Telegram или на почту в течение дня.</span><span data-uk>Заповніть форму — заявка надійде безпосередньо нам, і ми зв’яжемося з вами в Telegram або на пошту протягом дня.</span><span data-en>Fill out the form and it goes straight to us — we'll reach out on Telegram or email within a day.</span></p>
+</section>
+
+<div class="order-wrap">
+
+  <form id="orderForm" class="order-form reveal"
+        action="https://formsubmit.co/ajax/agggsan2@gmail.com" method="POST">
+
+    <!-- FormSubmit config -->
+    <input type="hidden" name="_subject" value="🆕 Новый заказ — ALONE STUDIO">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+    <div class="field-row">
+      <div class="field">
+        <label><span data-ru>Имя</span><span data-uk>Ім’я</span><span data-en>Name</span> *</label>
+        <input type="text" name="Имя" required data-ph="name">
+      </div>
+      <div class="field">
+        <label><span data-ru>Telegram или Email</span><span data-uk>Telegram або Email</span><span data-en>Telegram or Email</span> *</label>
+        <input type="text" name="Контакт" required placeholder="@username / email@mail.com">
+      </div>
+    </div>
+
+    <div class="field">
+      <label><span data-ru>Какая услуга нужна</span><span data-uk>Яка послуга потрібна</span><span data-en>Service needed</span> *</label>
+      <select name="Услуга" id="svc" required></select>
+    </div>
+
+    <div class="field">
+      <label><span data-ru>Тариф</span><span data-uk>Тариф</span><span data-en>Tier</span></label>
+      <div class="radio-group">
+        <label class="radio-pill">
+          <input type="radio" name="Тариф" value="Basic" checked>
+          <span>🟢 Basic</span>
+        </label>
+        <label class="radio-pill">
+          <input type="radio" name="Тариф" value="Standard">
+          <span>🟣 Standard</span>
+        </label>
+        <label class="radio-pill">
+          <input type="radio" name="Тариф" value="Premium">
+          <span>🔵 Premium</span>
+        </label>
+        <label class="radio-pill">
+          <input type="radio" name="Тариф" value="Не уверен(а) / Not sure">
+          <span><span data-ru>Не уверен(а)</span><span data-uk>Не впевнений(а)</span><span data-en>Not sure</span></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="field">
+      <label><span data-ru>Детали заказа</span><span data-uk>Деталі замовлення</span><span data-en>Project details</span> *</label>
+      <textarea name="Детали" required data-ph="details"></textarea>
+    </div>
+
+    <div class="field">
+      <label><span data-ru>Бюджет (необязательно)</span><span data-uk>Бюджет (необов’язково)</span><span data-en>Budget (optional)</span></label>
+      <input type="text" name="Бюджет" placeholder="$10 – $50">
+    </div>
+
+    <div class="cta-row" style="justify-content:flex-start"><button type="submit" class="submit-btn" id="submitBtn">
+      <span class="spinner"></span>
+      <span class="btn-label"><span data-ru>Отправить заказ</span><span data-uk>Надіслати замовлення</span><span data-en>Send order</span></span>
+    </button>
+      <a class="btn btn-ghost" id="tgBtn" href="https://t.me/Alone991" target="_blank" rel="noopener"><span data-ru>Отправить в Telegram</span><span data-uk>Надіслати в Telegram</span><span data-en>Send via Telegram</span></a></div>
+
+    <p class="form-note">
+      <span data-ru>Нажимая «Отправить», вы соглашаетесь на обработку заявки. Также можно написать напрямую в</span><span data-uk>Натискаючи «Надіслати», ви погоджуєтесь на обробку заявки. Також можна написати напряму в</span>
+      <span data-en>By submitting, you agree we can process this request. You can also reach us directly on</span>
+      <a href="https://t.me/Alone991" target="_blank" rel="noopener">Telegram (@Alone991)</a>.
+    </p>
+  </form>
+
+  <div class="form-status" id="formStatus">
+    <div class="check-circle">✓</div>
+    <h3><span data-ru>Заявка отправлена!</span><span data-uk>Заявку надіслано!</span><span data-en>Order sent!</span></h3>
+    <p><span data-ru>Спасибо! Мы получили детали проекта и скоро свяжемся с вами.</span><span data-uk>Дякуємо! Ми отримали деталі проєкту й скоро зв’яжемося з вами.</span><span data-en>Thanks! We've received your project details and will be in touch soon.</span></p>
+  </div>
+
+</div>
+
+<footer>
+  <span data-ru>Каждый проект важен.</span><span data-uk>Кожен проєкт важливий.</span><span data-en>Every project matters.</span>
+  &nbsp;·&nbsp; ALONE STUDIO &nbsp;·&nbsp;
+  <a href="https://t.me/AloneStudioTG" target="_blank" rel="noopener">t.me/AloneStudioTG</a>
+</footer>
+
+<a href="https://t.me/Alone991" target="_blank" rel="noopener" class="float-tg" aria-label="Telegram">
+  <span class="float-tg-ping"></span>
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M21.5 3.5L2.5 11l6 2.2m13-9.7L16 20.5l-7.5-7.3m13-9.7L8.5 13.2" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+<script src="script.js"></script>
+<script>
+document.getElementById('orderForm').addEventListener('submit', async function(e){
+  e.preventDefault();
+  const form = e.target;
+  const btn = document.getElementById('submitBtn');
+  btn.classList.add('loading');
+  btn.disabled = true;
+
+  try{
+    const res = await fetch(form.action, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(form)
+    });
+
+    if(res.ok){
+      form.style.display = 'none';
+      const status = document.getElementById('formStatus');
+      status.classList.add('show');
+    } else {
+      throw new Error('Request failed');
+    }
+  } catch(err){
+    const status = document.getElementById('formStatus');
+    status.classList.add('show', 'error');
+    status.querySelector('.check-circle').textContent = '!';
+    status.querySelector('h3').innerHTML = '<span data-ru>Не получилось отправить</span><span data-uk>Не вдалося надіслати</span><span data-en>Something went wrong</span>';
+    status.querySelector('p').innerHTML = '<span data-ru>Попробуйте ещё раз или напишите в Telegram напрямую — @Alone991.</span><span data-uk>Спробуйте ще раз або напишіть у Telegram напряму — @Alone991.</span><span data-en>Please try again, or message us directly on Telegram — @Alone991.</span>';
+    setLang(document.documentElement.getAttribute('lang') || 'ru');
+    btn.classList.remove('loading');
+    btn.disabled = false;
+  }
+});
+</script>
+</body>
+</html>
